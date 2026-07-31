@@ -1,0 +1,139 @@
+/* Navigation bar styles */
+.nav {
+    background-color: #4e4e4e;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TierForge button */
+.tierforge-button {
+    position: relative;
+    font-size: 25px;
+    left: 804px;
+    top: -17px;
+    width: auto;
+    background: none;
+    border: none;
+    color: red;
+}
+
+.tierforge-button:hover {
+    opacity: .6;
+}
+
+.tierforge-button:active {
+    opacity: .4;
+}
+
+/* Create button */
+.create-button {
+    position: fixed;
+    left: 1600px;
+    top: 10px;
+    color: red;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.create-button:hover {
+    opacity: .6;
+}
+
+.create-button:active {
+    opacity: .4;
+}
+
+/* Login button */
+.login-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    background-image: url('LoginGuyRed.png'); /* Add the image in the same folder */
+    background-size: 50px 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.login-button:hover {
+    opacity: .6;
+}
+
+.login-button:active {
+    opacity: .4;
+}
+
+/* Search bar styles */
+.search-bar {
+    width: 100px;
+    background-color: #555;
+    overflow: auto;
+}
+
+.search-bar input[type=text] {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 300px;
+    height: 30px;
+    padding: 6px;
+    font-size: 17px;
+    border-radius: 8px;
+    background-color: rgb(53, 52, 52);
+}
+
+/* Placeholder styling */
+::placeholder {
+    color: gray;
+    opacity: 1;
+}
+
+/* The container for dropdown box <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 1700px;
+    top: -87px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#greeting {
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Reset margin and padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+    z-index: -10px;
+}

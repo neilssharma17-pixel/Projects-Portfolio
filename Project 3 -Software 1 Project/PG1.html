@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="css/pixel-anvil.png">
+  <title>Tier List Maker</title>
+  <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/PG1style.css" rel="stylesheet"> <!-- Specific overrides for the page -->
+</head>
+
+<body>
+  <!-- This div contains the entire body for easy stacking. -->
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <!-- Code for Header -->
+    <header class="masthead mb-auto">
+      <div class="inner">
+        <h3 class="masthead-brand">Tierforge</h3>
+        <nav class="nav nav-masthead justify-content-center">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="PG1.html">Create</a>
+          <a class="nav-link" href="loginpage.html">Login</a>
+          <a class="nav-link" href="searchpage.html">Search</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- This div contains the tier list for easy stacking. -->
+    <div class="cover-container d-flex flex-column align-items-center justify-content-center h-100 p-3 mx-auto">
+      <!-- Tier List Name Panel: Holds Name text box -->
+      <div class="tiername-panel">
+        <label for="tierNameField" class="tiername-label">Tier List Name:</label>
+        <input type="text" id="tierNameField" value="TIER LIST" maxlength="50">
+      </div>
+
+      <!-- Tier Panel: Holds Rows -->
+      <div id="tierPanel" class="tier-panel">
+        <!-- Rows will be dynamically added here -->
+      </div>
+
+      <!-- Buttons Panel: Holds change buttons -->
+      <div class="buttons-panel">
+        <button id="addRowButton">Add Row</button>
+        <button id="removeRowButton">Remove Row</button>
+        <button id="continueButton">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <input type="color" id="colorPicker" style="display: none;">
+
+  <script src="js/pg1data.js"></script>
+  <!-- Bootstrap core JavaScript ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../../../dist/js/bootstrap.min.js"></script>
+</body>
+</html>

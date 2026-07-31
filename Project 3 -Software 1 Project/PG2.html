@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="css/pixel-anvil.png">
+  <title>Tier List - PG2</title>
+  <link href="bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/PG2style.css">
+</head>
+<body>
+  <!-- This div contains the entire body for easy stacking. -->
+  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <div class="text-center">
+    <!-- Code for Header -->
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Tierforge</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="PG1.html">Create</a>
+            <a class="nav-link" href="loginpage.html">Login</a>
+            <a class="nav-link" href="searchpage.html">Search</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+    
+    <!-- This div contains the tier list for easy stacking. -->
+    <div class="cover-container d-flex flex-column align-items-center justify-content-center h-100 p-3 mx-auto">
+
+      <!-- Main Content Section -->
+      <div class="content">
+        <!-- Tier List (Left Panel) -->
+        <div class="tier-panel mt-n10">
+          <div class="tier-list-name"><span id="tierListName"></span></div>
+          <div id="tierListRows" class="tier-list">
+          <!-- Rows will be inserted here by pg2data.js -->
+          </div>
+        </div>
+
+        <!-- Action Panel (Right Panel) -->
+        <div class="action-panel">
+          <!-- First Set of Buttons -->
+          <div class="action-buttons">
+            <button id="downloadButton">Download</button>
+            <button id="postButton">Post</button>
+          </div>
+
+          <!-- Spacer Between Button Sets -->
+          <div class="button-space"></div>
+
+          <!-- Second Set of Buttons -->
+          <div class="action-buttons">
+            <button id="uploadButton">Upload Images</button>
+            <label><input id="publicCheck" type ="radio" value="Public" name="option">Public</label>
+            <label><input id="privateCheck" type ="radio" value="Private" name="option">Private</label>
+          </div>
+
+          <!-- Upload Button (hidden file input) -->
+          <input type="file" id="fileInput" multiple style="display: none;" />
+
+          <!-- Error Message for exceeding the image limit -->
+          <div class="error-message" style="color: red; display: none;"></div>
+        </div>
+      </div>
+
+      <!-- Image Container below the action panel -->
+      <div class="image-container"></div>
+    </div>
+  </div>
+  <script src="js/pg2data.js"></script>
+  <script src="js/html2canvas.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+This was part of a Software Engineering 1 project.
+
+I removed various connections and data so as to protect any assets still up.
+
+Most functionality is dead due to the backend being shut down, tier list maker should still work though. 
